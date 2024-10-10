@@ -1,0 +1,220 @@
+/* STYLES FOR ABOUT */
+.about-section {
+  padding-top: 120px;
+  background-color: var(--second-color);
+  @media (min-width: 834px) {
+    padding-top: 274px;
+  }
+}
+.about-container {
+  display: grid;
+  gap: 20px;
+  @media (min-width: 834px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "d1 d2"
+      "l l";
+    row-gap: 40px;
+  }
+}
+.about-img-thumb {
+  @media (min-width: 834px) {
+    grid-area: d2;
+  }
+}
+.about-content-thumb {
+  @media (min-width: 834px) {
+    grid-area: d1;
+  }
+}
+.about-content-thumb p {
+  margin-bottom: 10px;
+}
+.about-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: 834px) {
+    grid-area: l;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(39, 69, 110, 0.1);
+  padding: 5px 0px 20px 0px;
+  @media (min-width: 834px) {
+    border-bottom: none;
+  }
+}
+.about-thumb {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 10px;
+
+  background-color: var(--bg-color);
+  fill: var(--second-color);
+}
+.about-item h4 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* STYLES FOR HOTELS */
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 10px;
+  @media (min-width: 1024px) {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.hotel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--second-color);
+  @media (min-width: 834px) {
+    background-color: transparent;
+  }
+}
+.hotel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.hotel-item-title {
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 24px;
+}
+.hotel-item p {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.hotel-item address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--text-color);
+  fill: var(--main-color);
+  stroke: var(--main-color);
+  font-weight: 500;
+  font-style: normal;
+}
+.hotel-link {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 10px 10px 10px;
+
+  color: var(--text-color);
+  fill: currentColor;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* STYLES FOR STATISTICS */
+.statistics-section {
+  background-color: var(--bg-color);
+}
+.statistics-list {
+  display: grid;
+  gap: 20px;
+  @media (min-width: 834px) {
+    grid-template-columns: 320px 320px;
+    justify-content: center;
+  }
+}
+.statistics-item {
+  border-bottom: 1px solid #586f8f;
+  padding: 5px 0px 20px 0px;
+  @media (min-width: 834px) {
+    border-bottom: none;
+  }
+}
+.statistics-item h3 {
+  margin-bottom: 5px;
+
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--second-color);
+}
+.statistics-item p {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--second-color);
+}
+
+/* STYLES FOR GALLERY */
+.gallery-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* STYLES FOR REVIEWS */
+.comments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+.comments-item {
+  border: 1px solid #c0c1ce;
+  border-radius: 10px;
+  padding: 10px;
+}
+.comments-thumb {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 10px;
+}
+.comments-thumb h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-text {
+  margin-bottom: 10px;
+
+  color: #000;
+  font-weight: 500;
+  font-style: normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

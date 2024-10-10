@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>domain.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/hero-img-desk.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav-header">
+          <a href="./" class="header-link link">domain.com</a>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a
+                href="./cookie-page.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Cookies Policy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./contacts-page.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./privacy-policy.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./terms-conditions.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="header-button js-open-menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg width="24" height="24" class="header-svg">
+              <use href="./img/mob-menu-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="page-content">
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            Bienvenido al mejor hotel <b>Nueva Zelanda</b>
+          </h1>
+        </div>
+      </section>
+      <section class="hotel-form-section">
+        <div class="hotel-form-wrapper">
+          <h2 class="hotel-form-title">
+            Encuentra el hotel perfecto para tu estadía
+          </h2>
+          <form id="hotel-form" class="hotel-form">
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <div class="custom-select-container">
+                <select id="guests" name="guests" class="custom-select">
+                  <option value="1">1 Adulta</option>
+                  <option value="2">2 adultos</option>
+                  <option value="3">3 adultos</option>
+                  <option value="4">4 adultos</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="room">Habitación</label>
+              <div class="custom-select-container">
+                <select id="room" name="room" class="custom-select">
+                  <option value="classic">Habitación clásica</option>
+                  <option value="deluxe">Habitación de lujo</option>
+                  <option value="suite">suite</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="checkin-date">Fecha de check-in</label>
+              <div class="custom-select-container">
+                <input
+                  type="date"
+                  id="checkin-date"
+                  name="checkin-date"
+                  value="2024-10-01"
+                  class="custom-select"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="checkout-date">Fecha de salida</label>
+              <div class="custom-select-container">
+                <input
+                  type="date"
+                  id="checkout-date"
+                  name="checkout-date"
+                  value="2024-10-07"
+                  class="custom-select"
+                />
+              </div>
+            </div>
+            <button type="submit" class="check-availability-btn">
+              Verifique la disponibilidad
+            </button>
+          </form>
+          <div
+            id="loading"
+            style="
+              display: none;
+              margin-top: 10px;
+              font-weight: 600;
+              color: var(--second-color);
+              font-size: 22px;
+              text-align: center;
+            "
+          >
+            Cargando hoteles...
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section">
+        <div class="container about-container">
+          <h2 class="visually-hidden">Sobre nosotras</h2>
+          <div class="about-img-thumb">
+            <picture>
+              <source
+                media="(max-width: 833px)"
+                srcset="./img/about-img.webp"
+              />
+              <source
+                media="(min-width: 834px)"
+                srcset="./img/about-img-desk.webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/about-img.webp"
+                alt="Опис зображення"
+                class="about-wrapper-img"
+              />
+            </picture>
+          </div>
+          <div class="about-content-thumb">
+            <h3 class="subtitle">Bienvenido a nuestros hoteles</h3>
+            <p class="main-text">
+              Bienvenido a su mejor guía para los mejores hoteles de casino en
+              nuevos ¡Zealand!Conocido no solo por sus impresionantes paisajes y
+              Aventuras emocionantes, Nueva Zelanda también ofrece un mundo de
+              lujo y emoción a través de sus hoteles de casino de primer
+              nivel.Si eres un turista o un local, estos hoteles proporcionan la
+              combinación perfecta de Entretenimiento, relajación y experiencias
+              inolvidables.
+            </p>
+            <p class="main-text">
+              Primero en la lista es el prestigioso Hotel y Casino de SkyCity en
+              Auckland, con más de 2.100 máquinas de juego y 150 mesa Juegos,
+              junto con alojamientos de lujo y un famoso spa.Por un Más ambiente
+              boutique, los invitados de Grand Mercure Nelson Monaco Charms con
+              sus cabañas de estilo inglés y su serenos jardines.Con casinos,
+              Día de buena cena y lugares impresionantes, estos hoteles ofrecen
+              el Escape perfecto.
+            </p>
+          </div>
+          <ul class="about-list">
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-magic-wand"></use>
+                </svg>
+              </div>
+              <h4>Recepción 24/7</h4>
+            </li>
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-location-food"></use>
+                </svg>
+              </div>
+              <h4>Restaurante</h4>
+            </li>
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-travel-car"></use>
+                </svg>
+              </div>
+              <h4>transferir</h4>
+            </li>
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-currency-dollar"></use>
+                </svg>
+              </div>
+              <h4>casino</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="hotel-section">
+        <div class="container">
+          <h2 class="visually-hidden">Hoteles</h2>
+          <ul class="hotel-list" id="our-hotel"></ul>
+        </div>
+      </section>
+
+      <section class="section statistics-section">
+        <div class="container">
+          <ul class="statistics-list">
+            <li class="statistics-item">
+              <h3>3.921</h3>
+              <p>Invitados felices</p>
+            </li>
+            <li class="statistics-item">
+              <h3>1.014</h3>
+              <p>alojamiento</p>
+            </li>
+            <li class="statistics-item">
+              <h3>689</h3>
+              <p>personal</p>
+            </li>
+            <li class="statistics-item">
+              <h3>31</h3>
+              <p>destino</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="subtitle">galería</h2>
+          <ul class="gallery-list" id="gallery-list"></ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="subtitle">reseñas</h2>
+          <ul class="comments-list">
+            <li>
+              <div class="comments-thumb">
+                <img
+                  src="./img/user-1.png"
+                  alt="Anastasia Marynec"
+                  class="comments-img"
+                />
+                <h3>jessicaWells</h3>
+              </div>
+              <p class="main-text">
+                "Encontré el hotel perfecto para mis vacaciones familiares a
+                través de esta ¡sitio!El proceso de reserva fue simple y
+                detallado Las descripciones nos ayudaron a elegir la mejor
+                opción.Tuvimos un Estancia fantástica, y definitivamente usaré
+                este sitio para el futuro ¡Viajes! "
+              </p>
+            </li>
+            <li>
+              <div class="comments-thumb">
+                <img
+                  src="./img/user-2.png"
+                  alt="Maria Kowalczyk"
+                  class="comments-img"
+                />
+                <h3>alexLindley</h3>
+              </div>
+              <p class="main-text">
+                "El sitio hizo que fuera tan fácil encontrar un hotel dentro de
+                mi presupuesto, y Las reseñas de los clientes fueron realmente
+                útiles.Terminé reservando un Hotel boutique que excedió todas
+                mis expectativas.Gran servicio ¡y grandes opciones! "
+              </p>
+            </li>
+            <li>
+              <div class="comments-thumb">
+                <img
+                  src="./img/user-3.png"
+                  alt="Vladyslav Nowak"
+                  class="comments-img"
+                />
+                <h3>María Ivanova</h3>
+              </div>
+              <p class="main-text">
+                "¡Me encantó lo fácil de usar que es el sitio web! Encontré un
+                último minuto Tratar en un lujoso hotel, y todo salió bien.El La
+                información en el sitio era clara, y la reserva era sin
+                problemas. ¡Muy recomendable! "
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <h2 class="footer-title">domain.com</h2>
+        <nav>
+          <ul class="footer-nav-list">
+            <li>
+              <a
+                href="./cookie-page.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Cookies Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contacts-page.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./privacy-policy.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="./terms-conditions.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer-icon-list">
+          <li class="footer-icon-item">
+            <a
+              href="https://www.gamcare.org.uk/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./img/footer-link.webp" alt="logo gamcare"
+            /></a>
+          </li>
+          <li class="footer-icon-item">
+            <a
+              href=" https://www.gambleaware.org/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./img/BeGamble.webp" alt="logo gambleaware"
+            /></a>
+          </li>
+          <li class="footer-icon-item">
+            <p class="footer-thumb">+18</p>
+          </li>
+        </ul>
+        <ul class="footer-text-list">
+          <li>
+            <p>
+              ¿Quieres contactarnos o compartir tu opinión?Escribir Para
+              nosotros en: uzecpany@gmail.com
+            </p>
+          </li>
+          <li>
+            <p>Para obtener más información, visite useCpany.com.</p>
+          </li>
+          <li>
+            <p>
+              Usar el sitio web significa consentimiento para el uso de cookies,
+              qué Nos permite proporcionar la más alta calidad de servicio.Todo
+              La información en nuestro sitio web es informativa.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-wrapper">
+        <a href="./" class="mob-link link">domain.com</a>
+        <button class="mobile-menu-btn js-close-menu" type="button">
+          <svg width="24" height="24">
+            <use href="./img/mob-menu-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav>
+        <ul class="mob-nav-list list">
+          <li>
+            <a
+              href="./cookie-page.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mob-nav-link link"
+              >Cookies Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contacts-page.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mob-nav-link link"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="./privacy-policy.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mob-nav-link link"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="./terms-conditions.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mob-nav-link link"
+              >Terms & Conditions</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/hotel.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

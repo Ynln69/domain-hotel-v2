@@ -1,0 +1,24 @@
+{
+  "gallery": [
+    {
+      "src": "../img/gallery-img1.jpg",
+      "alt": "Habitación con vista al mar y balcón, cama grande y moderna decoración"
+    },
+    {
+      "src": "../img/gallery-img2.jpg",
+      "alt": "Oficina moderna con vista a la ciudad y decoración elegante"
+    },
+    {
+      "src": "../img/gallery-img3.jpg",
+      "alt": "Habitación de hotel lujosa con vista a la ciudad y cama king size"
+    },
+    {
+      "src": "../img/gallery-img4.jpg",
+      "alt": "Piscina exterior con vista al horizonte de la ciudad y sillas de playa"
+    },
+    {
+      "src": "../img/gallery-img5.jpg",
+      "alt": "Vestíbulo elegante de hotel con decoración moderna y candelabro grande"
+    }
+  ]
+}

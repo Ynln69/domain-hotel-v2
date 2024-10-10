@@ -1,0 +1,40 @@
+.hero {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 369px;
+  background-image: url(../../img/hero-img-mob.webp);
+
+  background-repeat: no-repeat;
+  background-color: #b0e0e6;
+  background-size: cover;
+  @media (min-width: 834px) {
+    padding-top: 113px;
+    padding-bottom: 393px;
+    background-image: url(../../img/hero-img-desk.webp);
+  }
+}
+.hero-title {
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 64px;
+  }
+}
+
+.hero-contact {
+  padding-top: 257px;
+  padding-bottom: 12px;
+
+  background-image: url(../../img/hero-img2-desk.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #b0e0e6;
+  background-size: cover;
+  @media (min-width: 768px) {
+    padding-top: 310px;
+    padding-bottom: 200px;
+  }
+}

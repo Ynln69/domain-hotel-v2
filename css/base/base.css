@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+
+  background-color: var(--bg-mobile);
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  @media (min-width: 834px) {
+    background-color: var(--second-color);
+  }
+}
+.blur-background {
+  filter: blur(20px);
+}
+
+.content-wrapper {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .content-wrapper {
+    padding: 150px 60px 60px 60px;
+  }
+}
+
+.subtitle-content {
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.span {
+  width: 100%;
+  font-size: 18px;
+}
+.content-list {
+  list-style: square;
+  margin-left: 35px;
+}

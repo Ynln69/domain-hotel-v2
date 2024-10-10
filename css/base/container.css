@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(20px, calc(10px + 5vw), 130px);
+  padding-right: clamp(20px, calc(10px + 5vw), 130px);
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+.section {
+  padding-top: clamp(40px, calc(10px + 5vw), 60px);
+  padding-bottom: clamp(40px, calc(10px + 5vw), 60px);
+}

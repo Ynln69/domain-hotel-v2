@@ -1,0 +1,116 @@
+.hotel-form-wrapper {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--bg-color);
+  @media (min-width: 834px) {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+.hotel-form {
+  display: grid;
+  gap: 20px;
+  @media (min-width: 834px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+      "f1 f2"
+      "f3 f4"
+      "b b";
+  }
+}
+.hotel-form-title {
+  margin-bottom: 20px;
+
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.form-group {
+  @media (min-width: 834px) {
+    &:nth-child(1) {
+      grid-area: f1;
+    }
+    &:nth-child(2) {
+      grid-area: f2;
+    }
+    &:nth-child(3) {
+      grid-area: f3;
+    }
+    &:nth-child(4) {
+      grid-area: f4;
+    }
+  }
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+.form-group select,
+.form-group input[type="date"] {
+  width: 100%;
+  border: 1px solid rgba(135, 184, 250, 0.2);
+  outline: none;
+  padding: 10px 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: transparent;
+  color: var(--second-color);
+  font-weight: 700;
+}
+.custom-select-container {
+  position: relative;
+  width: 100%;
+  &::after {
+    content: url(../../img/eva_arrow-down-fill.svg);
+    font-size: 14px;
+    color: var(--accent-color);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+.custom-select option {
+  background-color: var(--bg-color);
+}
+
+.check-availability-btn {
+  width: 100%;
+  border: 1px solid rgba(135, 184, 250, 0.2);
+  padding: 10px 20px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  font-weight: 700;
+  text-align: center;
+  color: var(--second-color);
+  @media (min-width: 834px) {
+    grid-area: b;
+  }
+}
+.check-availability-btn:hover {
+  background-color: #0077b6;
+  color: white;
+}
