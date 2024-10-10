@@ -13,6 +13,26 @@
     background-image: url(../../img/hero-img-desk.webp);
   }
 }
+.hero-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  background-color: rgba(26, 26, 26, 0.5);
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+}
 .hero-title {
   font-family: var(--third-family);
   font-weight: 500;

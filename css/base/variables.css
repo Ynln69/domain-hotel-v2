@@ -4,10 +4,11 @@
   --third-family: "Kameron", sans-serif;
   --forth-family: "Montserrat", sans-serif;
 
-  --main-color: #27456e;
-  --text-color: #586f8f;
-  --second-color: #ffffff;
-  --accent-color: #87b8fa;
-  --bg-mobile: #ececf2;
-  --bg-color: #27456e;
+  --main-color: #2e8b57; /* Головний колір - зелений (SeaGreen) */
+  --text-color: #3b5323; /* Колір тексту - темно-зелений (OliveDrab) */
+  --second-color: #e0f7da; /* Другий колір - дуже світло-зелений (MintCream) */
+  --accent-color: #9acd32; /* Акцентний колір - жовто-зелений (YellowGreen) */
+  --bg-mobile: #f0fff0; /* Фон для мобільних - світлий зелений (Honeydew) */
+  --bg-color: #006400; /* Основний фон - темно-зелений (DarkGreen) */
+
 }
