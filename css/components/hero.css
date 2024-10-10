@@ -39,6 +39,7 @@
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
+  color: #fff;
   @media (min-width: 768px) {
     font-size: 64px;
   }
