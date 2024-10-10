@@ -70,49 +70,174 @@
       </div>
     </header>
 
-    <main class="container content-wrapper page-content">
-      <section>
-        <h1 class="subtitle">
-          Contáctanos
-          <span class="span">domain.com</span>
-        </h1>
-        <p>
-          Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas más
-          información, no dudes en ponerte en contacto con nosotros a través de
-          los siguientes medios.
-        </p>
+    <main>
+      <section style="padding: 60px 0">
+        <div class="container">
+          <h1 class="subtitle">
+            Contáctanos
+            <span class="span">domain.com</span>
+          </h1>
+          <p>
+            Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas
+            más información, no dudes en ponerte en contacto con nosotros a
+            través de los siguientes medios.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container about-container">
+          <h2 class="visually-hidden">Acerca de nosotros</h2>
+          <div class="about-img-thumb">
+            <picture>
+              <source
+                media="(max-width: 833px)"
+                srcset="./img/about-img.webp"
+              />
+              <source
+                media="(min-width: 834px)"
+                srcset="./img/about-img-desk.webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/about-img.webp"
+                alt="Descripción de la imagen"
+                class="about-wrapper-img"
+              />
+            </picture>
+          </div>
+          <div class="about-content-thumb">
+            <h3 class="subtitle">Descubre nuestros exclusivos hoteles</h3>
+            <p class="main-text">
+              Explora los hoteles más prestigiosos en Nueva Zelanda, conocidos
+              por sus impresionantes paisajes y emocionantes aventuras. Aquí
+              encontrarás lujo, emoción y una experiencia inolvidable en cada
+              rincón.
+            </p>
+            <p class="main-text">
+              SkyCity Hotel y Casino en Auckland es nuestra principal
+              recomendación, con más de 2.100 máquinas de juego y 150 mesas.
+              Disfruta de alojamiento de primera clase, un spa reconocido y un
+              ambiente inolvidable. Si prefieres algo más boutique, el Grand
+              Mercure Nelson Monaco ofrece cabañas con encanto inglés rodeadas
+              de serenos jardines.
+            </p>
+          </div>
+          <ul class="about-list">
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-magic-wand"></use>
+                </svg>
+              </div>
+              <h4>Recepción 24/7</h4>
+            </li>
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-location-food"></use>
+                </svg>
+              </div>
+              <h4>Restaurante gourmet</h4>
+            </li>
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-travel-car"></use>
+                </svg>
+              </div>
+              <h4>Servicio de traslado</h4>
+            </li>
+            <li class="about-item">
+              <div class="about-thumb">
+                <svg width="24" height="24">
+                  <use href="./img/icon-defs.svg#icon-currency-dollar"></use>
+                </svg>
+              </div>
+              <h4>Casino de clase mundial</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container form-container">
+          <h1 class="subtitle subtitle2">Contáctenos</h1>
+          <form id="contactForm" class="contact-form">
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Nombre"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Correo electrónico"
+            />
+
+            <label for="message">Wiadomość:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Mensaje"
+            ></textarea>
+
+            <button type="submit" class="main-link">Para enviar</button>
+          </form>
+        </div>
+
+        <div class="modal" id="thankYouModal">
+          <div class="modal-content">
+            <p>¡Gracias por el contacto!Nos comunicaremos con usted pronto.</p>
+            <button id="closeModal" class="main-link">Para cerrar</button>
+          </div>
+        </div>
       </section>
 
       <section>
-        <h2 class="subtitle-content">Información de Contacto</h2>
-        <ul class="content-list">
-          <li>Teléfono: +34 912 345 678</li>
-          <li>
-            Email: <a href="mailto:contacto@domain.com">contacto@domain.com</a>
-          </li>
-          <li>Dirección: Calle de la Innovación 456, Barcelona, España</li>
-        </ul>
+        <div class="container">
+          <h2 class="subtitle-content">Información de Contacto</h2>
+          <ul class="content-list">
+            <li>Teléfono: +34 912 345 678</li>
+            <li>
+              Email:
+              <a href="mailto:contacto@domain.com">contacto@domain.com</a>
+            </li>
+            <li>Dirección: Calle de la Innovación 456, Barcelona, España</li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2 class="subtitle-content">Encuéntranos en el Mapa</h2>
-        <div
-          class="map-container"
-          style="border: 0; display: flex; justify-content: center"
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9999999999996!2d2.173404315674316!3d41.385063979261194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2b5c6d7e8f9%3A0xabcdef1234567890!2sCalle+de+la+Innovaci%C3%B3n+456%2C+08001+Barcelona%2C+España!5e0!3m2!1ses!2sus!4v1697040400000!5m2!1ses!2sus"
-            height="450"
-            style="
-              border: 0;
-              display: flex;
-              justify-content: center;
-              width: 100%;
-            "
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <section style="padding: 60px 0">
+        <div class="container">
+          <h2 class="subtitle-content">Encuéntranos en el Mapa</h2>
+          <div
+            class="map-container"
+            style="border: 0; display: flex; justify-content: center"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9999999999996!2d2.173404315674316!3d41.385063979261194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2b5c6d7e8f9%3A0xabcdef1234567890!2sCalle+de+la+Innovaci%C3%B3n+456%2C+08001+Barcelona%2C+España!5e0!3m2!1ses!2sus!4v1697040400000!5m2!1ses!2sus"
+              height="450"
+              style="
+                border: 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+              "
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>

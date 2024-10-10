@@ -1,45 +1,40 @@
 {
-    "hotels": [
-      {
-        "name": "aucklandCityHotelHobsonSt",
-        "price": "$123.00",
-        "address": "157 Hobson Street, Auckland Central, Auckland 1010, Nueva Zelanda",
-        "image": "../img/hotel-1.jpg"
-      },
-      {
-        "name": "edgewaterWanaka",
-        "price": "$148.00",
-        "address": "54 Sargood Drive, Wanaka 9343, Nueva Zelanda",
-        "image": "../img/hotel-2.jpg"
-      },
-      {
-        "name": "rotoruaCitizensClub",
-        "price": "$110.00",
-        "address": "1146 Rangiuru Street, Rotorua 3010, Nueva Zelanda",
-        "image": "../img/hotel-3.jpg"
-
-      },
-      {
-        "name": "La Manse",
-        "price": "$143.00",
-        "address": "3519 State Highway 50 Rd 1, Hastings 4171, Nueva Zelanda",
-        "image": "../img/hotel-4.jpg"
-
-      },
-      {
-        "name": "Lodge Solitare",
-        "price": "$159.00",
-        "address": "16 Ronald Road, Lago Tarawera, Rotorua 3076, Nueva Zelanda",
-        "image": "../img/hotel-5.jpg"
-
-      },
-      {
-        "name": "Suites boutique de Aireedale",
-        "price": "$130.00",
-        "address": "380 Queen Street, Auckland Central, Auckland 1010, Nueva Zelanda",
-        "image": "../img/hotel-6.jpg"
-
-      }
-    ]
-  }
-  
+  "hotels": [
+    {
+      "name": "Hotel Pacifico Auckland",
+      "price": "$175.00",
+      "address": "123 Beach Avenue, Auckland Central, Auckland 1010, Nueva Zelanda",
+      "image": "../img/hotel-1.jpg"
+    },
+    {
+      "name": "Mountain View Resort",
+      "price": "$190.00",
+      "address": "789 Alpine Road, Wanaka 9343, Nueva Zelanda",
+      "image": "../img/hotel-2.jpg"
+    },
+    {
+      "name": "Lago Azul Lodge",
+      "price": "$135.00",
+      "address": "456 Lakefront Avenue, Rotorua 3010, Nueva Zelanda",
+      "image": "../img/hotel-3.jpg"
+    },
+    {
+      "name": "Villa del Sol",
+      "price": "$165.00",
+      "address": "321 Vineyard Street, Hastings 4171, Nueva Zelanda",
+      "image": "../img/hotel-4.jpg"
+    },
+    {
+      "name": "Forest Retreat Lodge",
+      "price": "$180.00",
+      "address": "654 Woodland Drive, Lago Tarawera, Rotorua 3076, Nueva Zelanda",
+      "image": "../img/hotel-5.jpg"
+    },
+    {
+      "name": "Auckland Elite Suites",
+      "price": "$145.00",
+      "address": "987 Skyline Boulevard, Auckland Central, Auckland 1010, Nueva Zelanda",
+      "image": "../img/hotel-6.jpg"
+    }
+  ]
+}
